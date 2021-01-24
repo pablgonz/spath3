@@ -1,3 +1,4 @@
+% arara: pdflatex: { interaction: batchmode }
 \documentclass{article}
 %\url{https://tex.stackexchange.com/q/410096/86}
 \usepackage{tikz}
@@ -14,7 +15,7 @@
 
 \begin{scope}[blend group=normal,even odd rule]
 \clip (0,0) circle[radius=1.07];
-\fill[black!30!white, save Hobby path={knot}] ([closed]90:2) foreach \k in {1,...,7} 
+\fill[black!30!white, save Hobby path={knot}] ([closed]90:2) foreach \k in {1,...,7}
    { .. (90-360/7+\k*1080/7:1) .. (90+\k*1080/7:2) } (90:2);
 \end{scope}
 

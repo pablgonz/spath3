@@ -1,5 +1,4 @@
-\RequirePackage{shellesc}
-\immediate\write18{cd ..; tex spath3_code.dtx}
+% arara: pdflatex: { interaction: batchmode }
 \documentclass{article}
 \RequirePackage[enable-debug]{expl3}
 \ExplSyntaxOn
@@ -53,7 +52,7 @@ Final action & \texttt{\showpath\SPathInfo{#1}{finalaction}} \\
 Path & \texttt{\showpath\SPathInfo{#1}{path}} \\
 Reverse path & \texttt{\showpath\SPathInfo{#1}{reversepath}} \\
 Min bb & \showpath\SPathInfoInto{#1}{minbb}{\stuff}\expandafter\pgfqpoint\stuff \\
-Max bb & \showpath\SPathInfoInto{#1}{maxbb}{\stuff}\expandafter\pgfqpoint\stuff 
+Max bb & \showpath\SPathInfoInto{#1}{maxbb}{\stuff}\expandafter\pgfqpoint\stuff
 \end{tabularx}%
 }
 

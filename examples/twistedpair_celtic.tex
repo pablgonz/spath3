@@ -1,3 +1,4 @@
+% arara: pdflatex: { interaction: batchmode }
 \documentclass[tikz,border=3mm]{standalone}
 %\url{https://tex.stackexchange.com/q/532840/86}
 \usetikzlibrary{knots,celtic}
@@ -35,9 +36,9 @@
 {(1.6*\X,\Y) node[draw,fill=orange,inner ysep=1.5pt,inner xsep=8pt,rounded
 corners=1.5pt]{}}};
 \strand[white]
-     plot[domain=0:4.5,samples=251] (1.6*\x,{0.2*cos(\x*360)}); 
+     plot[domain=0:4.5,samples=251] (1.6*\x,{0.2*cos(\x*360)});
 \strand[green!60!black]
-   plot[domain=0:4.5,samples=251] (1.6*\x,{-0.2*cos(\x*360)}); 
+   plot[domain=0:4.5,samples=251] (1.6*\x,{-0.2*cos(\x*360)});
 \end{knot}
 \end{tikzpicture}
 

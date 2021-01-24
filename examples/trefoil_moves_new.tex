@@ -1,5 +1,4 @@
-\RequirePackage{shellesc}
-%\immediate\write18{cd ..; tex spath3_code.dtx}
+% arara: pdflatex: { interaction: batchmode }
 \documentclass{article}
 \thispagestyle{empty}
 \usepackage[scale=.9,landscape]{geometry}
@@ -62,7 +61,7 @@
     every trefoil component/.style={trefoil},
     trefoil component 3/.style={blue}
   ]
-  
+
   \path[save spath=trefoil] ([closed]90:2) .. (-.75,1) .. (210:.5) .. (330:2) .. (90:.5) .. (210:2) .. (330:.5) .. (.75,1);
   \tikzset{
     split at self intersections=trefoil,

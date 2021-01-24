@@ -1,3 +1,4 @@
+% arara: pdflatex: { interaction: batchmode }
 \documentclass[a4paper,11pt]{report}
 %\url{https://tex.stackexchange.com/q/478294/86}
 \usepackage{shellesc}
@@ -50,7 +51,7 @@ Demonstration of the problem: the clipping circles are big enough that the circl
   },
   rotate=180]
   \strand ([closed]0,0) .. (0.7,-0.7) .. (0,-1) .. (-1.7,0) .. (-1.5,2.2) .. (0,2.5) .. (.5,2) .. (-.5,1) [add arrow,violet] .. (.5,0) .. (0,-.5) .. (-.5,0) .. (.5,1) .. (-.5,2) .. (-1.5,1) .. (0,0);
-  \strand[knot diagram/only when rendering/.style={my style}, lightgray] (-0.7,-1.2) -- (-0.7,-.9); 
+  \strand[knot diagram/only when rendering/.style={my style}, lightgray] (-0.7,-1.2) -- (-0.7,-.9);
   \strand[knot diagram/only when rendering/.style={my style}, lightgray] (-0.7,-.75) -- (-0.7,2.5);
 \end{knot}
 \path (0,-.7);
@@ -79,7 +80,7 @@ Fix one: shrink the clipping circles using the \verb+clip radius+ key.
   },
   rotate=180]
   \strand ([closed]0,0) .. (0.7,-0.7) .. (0,-1) .. (-1.7,0) .. (-1.5,2.2) .. (0,2.5) .. (.5,2) .. (-.5,1) [add arrow,violet] .. (.5,0) .. (0,-.5) .. (-.5,0) .. (.5,1) .. (-.5,2) .. (-1.5,1) .. (0,0);
-  \strand[knot diagram/only when rendering/.style={my style}, lightgray] (-0.7,-1.2) -- (-0.7,-.9); 
+  \strand[knot diagram/only when rendering/.style={my style}, lightgray] (-0.7,-1.2) -- (-0.7,-.9);
   \strand[knot diagram/only when rendering/.style={my style}, lightgray] (-0.7,-.75) -- (-0.7,2.5);
 \end{knot}
 \path (0,-.7);
@@ -148,7 +149,7 @@ If you aren't wedded to that specific path then reducing the number of nodes can
   flip crossing=3,
   rotate=180]
   \strand ([closed]0,0) .. (0.7,-0.7) .. (0,-1) .. (-1.7,0) .. (-1.5,2.2) .. (0,2.5) .. (.5,2) .. (-.5,1) [add arrow,violet] .. (.5,0) .. (0,-.5) .. (-.5,0) .. (.5,1) .. (-.5,2) .. (-1.5,1) .. (0,0);
-  \strand[knot diagram/only when rendering/.style={my style}, lightgray] (-0.7,-1.2) -- (-0.7,-.9); 
+  \strand[knot diagram/only when rendering/.style={my style}, lightgray] (-0.7,-1.2) -- (-0.7,-.9);
   \strand[knot diagram/only when rendering/.style={my style}, lightgray] (-0.7,-.75) -- (-0.7,2.5);
 \end{knot}
 \path (0,-.7);

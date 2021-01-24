@@ -17,3 +17,6 @@ tikzlibrarycalligraphy.code.tex
 tikzlibraryknots.code.tex
 tikzlibraryspath3.code.tex
 CTAN/*
+
+## l3build specific
+build/*

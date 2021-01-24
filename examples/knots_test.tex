@@ -1,6 +1,4 @@
-\RequirePackage{shellesc}
-\immediate\write18{cd ..; tex spath3_code.dtx}
-%\immediate\write18{tex knots.dtx}
+% arara: pdflatex: { interaction: batchmode }
 \documentclass{article}
 \RequirePackage[enable-debug]{expl3}
 \ExplSyntaxOn
@@ -11,10 +9,10 @@
 
 \tikzset{
   path details/.style={
-    >=stealth, 
+    >=stealth,
     every node/.style={
-      midway, 
-      sloped, 
+      midway,
+      sloped,
       font=\tiny
     },
   }
@@ -109,9 +107,9 @@
 \end{tikzpicture}
 
 
-\newcommand{\motif}[1]{ 
-  to ++(180+#1:0.50) arc (270+#1:150+#1:0.15) 
-  to ++( 60+#1:0.50) arc (-30+#1:150+#1:0.15) 
+\newcommand{\motif}[1]{
+  to ++(180+#1:0.50) arc (270+#1:150+#1:0.15)
+  to ++( 60+#1:0.50) arc (-30+#1:150+#1:0.15)
   to ++(240+#1:0.25) arc (150+#1:330+#1:0.25)
   to ++( 60+#1:0.55) arc (150+#1: 30+#1:0.20)
 }
@@ -208,9 +206,9 @@ to [out=up, in=down] (2,7);
 
 \hspace{-0.75in}
 \noindent
-\newcommand{\motif}[1]{ 
-  to ++(180+#1:0.50) arc (270+#1:150+#1:0.15) 
-  to ++( 60+#1:0.50) arc (-30+#1:150+#1:0.15) 
+\newcommand{\motif}[1]{
+  to ++(180+#1:0.50) arc (270+#1:150+#1:0.15)
+  to ++( 60+#1:0.50) arc (-30+#1:150+#1:0.15)
   to ++(240+#1:0.25) arc (150+#1:330+#1:0.25)
   to ++( 60+#1:0.55) arc (150+#1: 30+#1:0.20)
 }
